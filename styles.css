@@ -1,0 +1,16 @@
+#title {
+    text-align:center;
+}
+
+#main {
+    text-align:center;
+}
+
+#end {
+    absolute:bottom;
+    text-align:center;
+}
+
+footer {
+    background-color:grey;
+}
