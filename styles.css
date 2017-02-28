@@ -7,10 +7,13 @@
 }
 
 #end {
-    absolute:bottom;
     text-align:center;
 }
 
 footer {
     background-color:grey;
+    position:fixed;
+    bottom:0px
+    left:auto;
+    right:auto;
 }

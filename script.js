@@ -1,7 +1,16 @@
 var SearchTerm
 
-$("#submit").click(function() {
-    searchTerm = $("#memes").val();
+
+    //        $(this).val()
+//    });
+
+//$("#submit").click(function() {
+  $("#memes").keypress(function(){
+    SearchTerm = $("#memes").val();
+    
+         $("#results").html("");
+         
+        
     
     $.getJSON(
         
@@ -9,6 +18,11 @@ $("#submit").click(function() {
         
        function(response) {
         console.log(response);
-        $("#results").append("<img src=" + "https://api.giphy.com/v1/gifs/search?q=" + SearchTerm + "&api_key=dc6zaTOxFJmzC");
+        for(var i=0; 1<26; i++){
+        $("#results").append("<img src='"+response.data[i].images.original.url+"'/>");
+        }
       }
+      
+    
 )});
+
